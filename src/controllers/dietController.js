@@ -4,7 +4,7 @@ const { APIKEY1, APIKEY2, APIKEY3, APIKEY4 } = process.env;
 
 const getAllDiet = async () => {
 
-    const dietApi = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${APIKEY1}&addRecipeInformation=true&number=10`);
+    const dietApi = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${APIKEY2}&addRecipeInformation=true&number=10`);
     let diets = await dietApi.data.results.map((e) => e.diets);
     
     let types = diets.flat();

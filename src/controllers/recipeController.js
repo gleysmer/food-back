@@ -7,7 +7,7 @@ const { Recipe, Diet }= require('../db');
     const getApiInfo = async () => {
             try {
                 let diet = await axios.get(
-                    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${APIKEY1}&addRecipeInformation=true&number=10`
+                    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${APIKEY2}&addRecipeInformation=true&number=10`
                 );
         
                 let all = diet.data.results.map((e) => {
