@@ -27,6 +27,7 @@ const { getAllDiet } = require('./src/controllers/dietController');
 conn.sync({ force: true }).then(async () => {
     await getAllDiet();
     server.listen(port, () => {
+        
         console.log(`listening at ${port}`); // eslint-disable-line no-console
     });
 });

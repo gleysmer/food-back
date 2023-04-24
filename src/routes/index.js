@@ -5,7 +5,6 @@ const { Router } = require('express');
 const recipeRouter= require('./recipeRouter');
 const dietRouter= require('./dietRouter')
 const router = Router();
-
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 router.use('/', recipeRouter)
